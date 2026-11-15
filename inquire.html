@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquire Now | Biyaheng Batangan</title>
+  <meta name="description" content="Inquire about a public or private Biyaheng Batangan day tour.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo-mark" aria-hidden="true"><span class="sun"></span><span class="volcano"></span><span class="lake"></span></span>
+        <span class="brand-text">Biyaheng Batangan</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="destinations.html">Destinations</a>
+        <div class="dropdown-menu">
+          <a href="lipa.html">Lipa</a>
+          <a href="batangas-city.html">Batangas City</a>
+          <a href="taal.html">Taal</a>
+          <a href="san-juan.html">San Juan</a>
+          <a href="nasugbu.html">Nasugbu</a>
+        </div>
+      </div>
+      <a href="packages.html">Tour Packages</a>
+      <a href="about.html">About Us</a>
+      <a class="active cta" href="inquire.html" aria-current="page">Inquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero small">
+      <div class="hero-inner">
+        <p class="eyebrow">Biyaheng Batangan</p>
+        <h1>Inquire Now</h1>
+        <p class="lead">Tell us where, when, and how many. We will confirm availability within 24 hours.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Booking form</h2>
+      <p class="section-intro">Public tours follow the fixed schedule on each destination page. Private tours can be arranged for any available date.</p>
+
+      <form class="booking" action="#" method="post">
+        <div class="row">
+          <label>Full name
+            <input type="text" name="name" placeholder="Juan Dela Cruz" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <div class="row">
+          <label>Destination
+            <select name="destination">
+              <option>Lipa</option>
+              <option>Batangas City</option>
+              <option>Taal</option>
+              <option>San Juan</option>
+              <option>Nasugbu</option>
+            </select>
+          </label>
+          <label>Tour type
+            <select name="tour">
+              <option>Public Tour</option>
+              <option>Private Tour</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label>Preferred date
+            <input type="date" name="date" required>
+          </label>
+          <label>Number of guests
+            <input type="number" name="guests" min="1" max="10" value="2" required>
+          </label>
+        </div>
+        <label>Special requests
+          <textarea name="notes" rows="4" placeholder="Dietary needs, celebrations, accessibility..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send booking request</button>
+      </form>
+    </section>
+
+    <section class="section alt">
+      <h2>Prices at a glance</h2>
+      <p class="section-intro">Per person, all-in. Private rates shown for a group of 10.</p>
+      <div class="table-wrap">
+        <table class="mini">
+          <thead>
+            <tr><th>Destination</th><th>Duration</th><th>Tour days</th><th>Public tour</th><th>Private tour (10 guests)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="lipa.html">Lipa</a></td>
+              <td>7 hrs 40 min</td>
+              <td>Tuesday to Friday</td>
+              <td>₱1,360</td>
+              <td>₱1,460</td>
+            </tr>
+            <tr>
+              <td><a href="batangas-city.html">Batangas City</a></td>
+              <td>7 hrs 25 min</td>
+              <td>Tuesday to Friday</td>
+              <td>₱1,320</td>
+              <td>₱1,420</td>
+            </tr>
+            <tr>
+              <td><a href="taal.html">Taal</a></td>
+              <td>5 hrs 50 min</td>
+              <td>Tuesday to Sunday</td>
+              <td>₱790</td>
+              <td>₱880</td>
+            </tr>
+            <tr>
+              <td><a href="san-juan.html">San Juan</a></td>
+              <td>9 hrs</td>
+              <td>Daily, weather permitting</td>
+              <td>₱2,020</td>
+              <td>₱2,100</td>
+            </tr>
+            <tr>
+              <td><a href="nasugbu.html">Nasugbu</a></td>
+              <td>8 hrs 25 min</td>
+              <td>Daily, weather permitting</td>
+              <td>₱1,610</td>
+              <td>₱1,800</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Prices are estimates and may change. Smaller private groups pay a higher per-person rate because the van, driver, and guide are shared by fewer people.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html">
+      <span class="logo-mark" aria-hidden="true"><span class="sun"></span><span class="volcano"></span><span class="lake"></span></span>
+      <span class="brand-text">Biyaheng Batangan</span>
+    </a>
+    <p>Day tours across Batangas: Lipa, Batangas City, Taal, San Juan, and Nasugbu.</p>
+    <p class="muted">A school project &bull; Group members: [Name 1], [Name 2], [Name 3], [Name 4]</p>
+  </footer>
+
+</body>
+</html>
